@@ -172,5 +172,23 @@ print(p)
 
 
 
+#奇异值分解
+import numpy as np
+
+# 定义一个矩阵
+A = np.array([[1, 2], [3, 4], [5, 6]])
+
+# 进行奇异值分解
+U, Sigma, Vt = np.linalg.svd(A)
+
+print("左奇异矩阵 U:")
+print(U)
+print("奇异值矩阵 Sigma:")
+print(Sigma)
+print("右奇异矩阵 V 的转置 Vt:")
+print(Vt)
+
+
+
 
 
