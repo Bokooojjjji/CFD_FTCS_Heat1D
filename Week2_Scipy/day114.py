@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import numpy as np
 
 # 定义半圆函数
@@ -43,3 +44,12 @@ def lorenz(w,t,p,r,b):
 t = np.arange(0,30,0.02)#创建时间点
 #调用ode对lorenze进行求解，用两个不同的初始值
 track1 = odeint(lorenz,(0.0,1.00,0.0),t,args=(10.0,28.0))
+=======
+#数值积分
+#球的体积
+import numpy as np
+def half_circle(x):
+    return(1- x**2)**0.5
+np.trapz(y,x)*2
+from scipy import integrate
+>>>>>>> origin/main
